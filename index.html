@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <section class="card">
+        <div>
+            <h1 id="titulo">Cadastro de Notas</h1><br>
+            <p id="subtitulo">Preencha todos os dados abaixo</p><br>
+        </div>
+        <form name="formsubmit">
+            <fieldset> 
+                <div class="campo">
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class ="campo">
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class ="campo">
+                <label>E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            
+            <div class ="campo">
+                <label>Avatar</label><br><br>
+                <select name="avatars" id="avatar" required>
+                    <option selected disabled value=""> Selecione o avatar</option>
+                    <option value="mario">Mario</option>
+                    <option value="luigi">Luigi</option>
+                    <option value="toad">Toad</option>
+                    <option value="koppa">Koppa</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label>Selecione seus pontos</label><br><br>
+                <label><input type="radio" name="pontos" value=0 checked>0</label>
+                <label><input type="radio" name="pontos" value=1>1</label>
+                <label><input type="radio" name="pontos" value=2>2</label>
+                <label><input type="radio" name="pontos" value=3>3</label>
+                <label><input type="radio" name="pontos" value=4>4</label>
+                <label><input type="radio" name="pontos" value=5>5</label>
+                <label><input type="radio" name="pontos" value=6>6</label>
+                <label><input type="radio" name="pontos" value=7>7</label>
+                <label><input type="radio" name="pontos" value=8>8</label>
+                <label><input type="radio" name="pontos" value=9>9</label>
+                <label><input type="radio" name="pontos" value=10>10</label>
+
+            </div>
+
+
+            <div class="campo">
+                <label>Selecione sua nota</label><br><br>
+                <label><input type="radio" name="nota" value=0 checked>0</label>
+                <label><input type="radio" name="nota" value=1>1</label>
+                <label><input type="radio" name="nota" value=2>2</label>
+                <label><input type="radio" name="nota" value=3>3</label>
+                <label><input type="radio" name="nota" value=4>4</label>
+                <label><input type="radio" name="nota" value=5>5</label>
+                <label><input type="radio" name="nota" value=6>6</label>
+                <label><input type="radio" name="nota" value=7>7</label>
+                <label><input type="radio" name="nota" value=8>8</label>
+                <label><input type="radio" name="nota" value=9>9</label>
+                <label><input type="radio" name="nota" value=10>10</label>
+            </div>
+            <div class="campo">
+                <label>Empresas</label>
+                <input type="text" name="empresas" id="empresas" required>
+            </div>
+            <div class="campo">
+                <label>Universidade</label>
+                <input type="text" name="universidade" id="universidade" required>
+            </div>
+            <fieldset>
+                <div class="campo">
+                    <label>Horários</label><br><br>
+                    <input type="checkbox" id="horario" name="horario1" value="manha" checked>
+                    <label for ="manha">Manhã</label>
+                    <input type="checkbox" id="horario" name="horario2" value="tarde">
+                    <label for ="tarde">Tarde</label>
+                    <input type="checkbox" id="horario" name="horario3" value="noite">
+                    <label for ="noite">Noite</label>
+
+                    
+                </div>
+                 
+            </fieldset>
+            <div class="submitButton">
+            <button id="btn" type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+            
+        
+    </section>
+    <script src="script.js" type="module"> </script>
+
+</body>
+<script></script>
+</html>
+

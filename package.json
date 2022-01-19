@@ -1,0 +1,11 @@
+{
+  "name": "teste-nivelamento",
+  "version": "1.0.0",
+  "description": "Teste de Nivelamento HTML + JS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinicius Oliveira",
+  "license": "ISC"
+}
