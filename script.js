@@ -30,9 +30,8 @@ function postInfo(url, body){
     xhr.send(JSON.stringify(body));   
 }
 
-//Função de Submit - Recebe info do form e envia
 function formSubmit(event){
-    event.preventDefault();
+    // event.preventDefault();
     console.log(document.formsubmit)
     const form = document.formsubmit
     const {nome, sobrenome, email, avatar, pontos, nota, empresas, universidade, horario} = form
