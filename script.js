@@ -55,13 +55,14 @@ function formSubmit(event){
         "universidade": universidade.value,
         "horario": horarioDisponivel           
     }
-
+    console.log(horarioDisponivel)
     if (horarioDisponivel.length === 0){
         alert('Você deve escolher pelo menos um horário')
     }
 
     if (formValidation(body)){
         postInfo(url, body);
+        
     }
 }
 
