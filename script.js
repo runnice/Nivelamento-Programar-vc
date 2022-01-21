@@ -14,7 +14,7 @@ function formValidation(body){
     else {
         return validate
     }
-}
+};
 
 function postInfo(url, body){
     const xhr = new XMLHttpRequest();
@@ -22,13 +22,13 @@ function postInfo(url, body){
         if (this.readyState == 4 && this.status == 200) {
         // console.log(xhr.responseText);
         }
-    }
+    };
 
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader("token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTc2NjhlYWIzNjI0OWJkODY3NDRmZiIsImlhdCI6MTY0MjU1NjQ2NCwiZXhwIjoxNjQzMTYxMjY0fQ.LZWFaCW1EEd-zKjVERjtRSchBSIjDcewZQPNOR8VMUA");
     xhr.send(JSON.stringify(body));   
-}
+};
 
 function formSubmit(event){
     // event.preventDefault();
@@ -40,7 +40,7 @@ function formSubmit(event){
         if(item.checked){
            horarioDisponivel.push(item.value)
         }
-    })
+    });
     
     const body = {
         "login": "programar@gmail.com",
@@ -54,16 +54,16 @@ function formSubmit(event){
         "empresas": empresas.value,
         "universidade": universidade.value,
         "horario": horarioDisponivel           
-    }
-    console.log(horarioDisponivel)
+    };
+    
     if (horarioDisponivel.length === 0){
         alert('Você deve escolher pelo menos um horário')
-    }
+    };
 
     if (formValidation(body)){
         postInfo(url, body);
         
-    }
+    };
 }
 
 btn.addEventListener("click", formSubmit);
